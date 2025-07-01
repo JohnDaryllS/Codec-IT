@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - IT Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div id="loading-overlay">
+      <div class="loading-circle-container">
+        <!-- AI SVG Animation (copied from .hero-ai-animation) -->
+        <svg viewBox="0 0 320 320" width="320" height="320" fill="none" xmlns="http://www.w3.org/2000/svg" class="ai-svg power-core-svg">
+          <defs>
+            <radialGradient id="aiGradient" cx="50%" cy="50%" r="80%">
+              <stop offset="0%" stop-color="#00F0FF"/>
+              <stop offset="100%" stop-color="#7F5CFF"/>
+            </radialGradient>
+            <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#00F0FF" stop-opacity="1"/>
+              <stop offset="80%" stop-color="#7F5CFF" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#181A2A" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <!-- Glowing energy core -->
+          <circle cx="160" cy="160" r="38" fill="url(#coreGlow)" class="core-glow"/>
+          <circle cx="160" cy="160" r="24" fill="#181A2A" stroke="#00F0FF" stroke-width="2.5" class="core-outline"/>
+          <circle cx="160" cy="160" r="14" fill="#00F0FF" opacity="0.7" class="core-pulse"/>
+          <!-- Animated energy rays -->
+          <g class="core-rays">
+            <line x1="160" y1="160" x2="160" y2="90" class="core-ray"/>
+            <line x1="160" y1="160" x2="230" y2="160" class="core-ray"/>
+            <line x1="160" y1="160" x2="160" y2="230" class="core-ray"/>
+            <line x1="160" y1="160" x2="90" y2="160" class="core-ray"/>
+            <line x1="160" y1="160" x2="210" y2="110" class="core-ray core-ray-thin"/>
+            <line x1="160" y1="160" x2="110" y2="210" class="core-ray core-ray-thin"/>
+            <line x1="160" y1="160" x2="210" y2="210" class="core-ray core-ray-thin"/>
+            <line x1="160" y1="160" x2="110" y2="110" class="core-ray core-ray-thin"/>
+          </g>
+          <!-- Outer network -->
+          <circle cx="160" cy="160" r="70" stroke="#7F5CFF" stroke-width="2" fill="none"/>
+          <circle cx="160" cy="160" r="40" stroke="#00F0FF" stroke-width="2" fill="none"/>
+          <!-- Small powered nodes -->
+          <g class="ai-nodes">
+            <circle class="node-pulse" cx="160" cy="90" r="10"/>
+            <circle class="node-dot" cx="160" cy="90" r="6" fill="#181A2A" stroke="#00F0FF" stroke-width="2"/>
+            <circle class="node-pulse" cx="230" cy="160" r="10"/>
+            <circle class="node-dot" cx="230" cy="160" r="6" fill="#181A2A" stroke="#7F5CFF" stroke-width="2"/>
+            <circle class="node-pulse" cx="160" cy="230" r="10"/>
+            <circle class="node-dot" cx="160" cy="230" r="6" fill="#181A2A" stroke="#00F0FF" stroke-width="2"/>
+            <circle class="node-pulse" cx="90" cy="160" r="10"/>
+            <circle class="node-dot" cx="90" cy="160" r="6" fill="#181A2A" stroke="#7F5CFF" stroke-width="2"/>
+            <circle class="node-pulse" cx="210" cy="110" r="7"/>
+            <circle class="node-dot" cx="210" cy="110" r="4" fill="#181A2A" stroke="#00F0FF" stroke-width="1.5"/>
+            <circle class="node-pulse" cx="110" cy="210" r="7"/>
+            <circle class="node-dot" cx="110" cy="210" r="4" fill="#181A2A" stroke="#7F5CFF" stroke-width="1.5"/>
+            <circle class="node-pulse" cx="210" cy="210" r="7"/>
+            <circle class="node-dot" cx="210" cy="210" r="4" fill="#181A2A" stroke="#00F0FF" stroke-width="1.5"/>
+            <circle class="node-pulse" cx="110" cy="110" r="7"/>
+            <circle class="node-dot" cx="110" cy="110" r="4" fill="#181A2A" stroke="#7F5CFF" stroke-width="1.5"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <nav class="navbar dark-navbar">
+        <div class="nav-container">
+            <div class="nav-logo minimal-logo">
+                <img src="images/a9171c8c-00ae-4b72-a73a-f32912fdafd0 (1).jpg" alt="TechSolutions Logo" class="nav-img-logo">
+                <span class="logo-text">TechSolutions</span>
+            </div>
+            <ul class="nav-menu minimal-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero dark-hero" id="home">
+        <div class="hero-bg-shapes"></div>
+        <div class="hero-inner">
+            <div class="hero-content hero-left">
+                <h1 class="hero-headline">Unleash the Power of Next-Gen IT</h1>
+                <p class="hero-subheading">AI-driven. Cloud-native. Cyber-secure.<br>We build the future, today.</p>
+                <ul class="hero-values">
+                  <li><i class="fas fa-brain"></i> AI & Automation Experts</li>
+                  <li><i class="fas fa-cloud"></i> Scalable Cloud Solutions</li>
+                  <li><i class="fas fa-shield-alt"></i> Enterprise-Grade Security</li>
+                  <li><i class="fas fa-rocket"></i> Fast, Reliable Delivery</li>
+                </ul>
+                <a href="#contact" class="cta-btn neon-btn">Start Your Transformation</a>
+            </div>
+            <div class="hero-ai-animation hero-right">
+                <!-- AI SVG Animation -->
+                <svg viewBox="0 0 320 320" width="320" height="320" fill="none" xmlns="http://www.w3.org/2000/svg" class="ai-svg power-core-svg">
+                  <defs>
+                    <radialGradient id="aiGradient" cx="50%" cy="50%" r="80%">
+                      <stop offset="0%" stop-color="#00F0FF"/>
+                      <stop offset="100%" stop-color="#7F5CFF"/>
+                    </radialGradient>
+                    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#00F0FF" stop-opacity="1"/>
+                      <stop offset="80%" stop-color="#7F5CFF" stop-opacity="0.5"/>
+                      <stop offset="100%" stop-color="#181A2A" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                  <!-- Glowing energy core -->
+                  <circle cx="160" cy="160" r="38" fill="url(#coreGlow)" class="core-glow"/>
+                  <circle cx="160" cy="160" r="24" fill="#181A2A" stroke="#00F0FF" stroke-width="2.5" class="core-outline"/>
+                  <circle cx="160" cy="160" r="14" fill="#00F0FF" opacity="0.7" class="core-pulse"/>
+                  <!-- Animated energy rays -->
+                  <g class="core-rays">
+                    <line x1="160" y1="160" x2="160" y2="90" class="core-ray"/>
+                    <line x1="160" y1="160" x2="230" y2="160" class="core-ray"/>
+                    <line x1="160" y1="160" x2="160" y2="230" class="core-ray"/>
+                    <line x1="160" y1="160" x2="90" y2="160" class="core-ray"/>
+                    <line x1="160" y1="160" x2="210" y2="110" class="core-ray core-ray-thin"/>
+                    <line x1="160" y1="160" x2="110" y2="210" class="core-ray core-ray-thin"/>
+                    <line x1="160" y1="160" x2="210" y2="210" class="core-ray core-ray-thin"/>
+                    <line x1="160" y1="160" x2="110" y2="110" class="core-ray core-ray-thin"/>
+                  </g>
+                  <!-- Outer network -->
+                  <circle cx="160" cy="160" r="70" stroke="#7F5CFF" stroke-width="2" fill="none"/>
+                  <circle cx="160" cy="160" r="40" stroke="#00F0FF" stroke-width="2" fill="none"/>
+                  <!-- Small powered nodes -->
+                  <g class="ai-nodes">
+                    <circle class="node-pulse" cx="160" cy="90" r="10"/>
+                    <circle class="node-dot" cx="160" cy="90" r="6" fill="#181A2A" stroke="#00F0FF" stroke-width="2"/>
+                    <circle class="node-pulse" cx="230" cy="160" r="10"/>
+                    <circle class="node-dot" cx="230" cy="160" r="6" fill="#181A2A" stroke="#7F5CFF" stroke-width="2"/>
+                    <circle class="node-pulse" cx="160" cy="230" r="10"/>
+                    <circle class="node-dot" cx="160" cy="230" r="6" fill="#181A2A" stroke="#00F0FF" stroke-width="2"/>
+                    <circle class="node-pulse" cx="90" cy="160" r="10"/>
+                    <circle class="node-dot" cx="90" cy="160" r="6" fill="#181A2A" stroke="#7F5CFF" stroke-width="2"/>
+                    <circle class="node-pulse" cx="210" cy="110" r="7"/>
+                    <circle class="node-dot" cx="210" cy="110" r="4" fill="#181A2A" stroke="#00F0FF" stroke-width="1.5"/>
+                    <circle class="node-pulse" cx="110" cy="210" r="7"/>
+                    <circle class="node-dot" cx="110" cy="210" r="4" fill="#181A2A" stroke="#7F5CFF" stroke-width="1.5"/>
+                    <circle class="node-pulse" cx="210" cy="210" r="7"/>
+                    <circle class="node-dot" cx="210" cy="210" r="4" fill="#181A2A" stroke="#00F0FF" stroke-width="1.5"/>
+                    <circle class="node-pulse" cx="110" cy="110" r="7"/>
+                    <circle class="node-dot" cx="110" cy="110" r="4" fill="#181A2A" stroke="#7F5CFF" stroke-width="1.5"/>
+                  </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer dark-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="images/a9171c8c-00ae-4b72-a73a-f32912fdafd0 (1).jpg" alt="TechSolutions Logo" class="footer-img-logo">
+          <span class="footer-logo-text">TechSolutions</span>
+          <span class="footer-tagline">Empowering Innovation, Together</span>
+          <span class="footer-copy">&copy; 2024 TechSolutions. All rights reserved.</span>
+        </div>
+        <div class="footer-center">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+          <form class="footer-newsletter" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Subscribe to newsletter" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="footer-socials-row">
+            <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

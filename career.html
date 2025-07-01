@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | TechSolutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar dark-navbar">
+        <div class="nav-container">
+            <div class="nav-logo minimal-logo">
+                <img src="images/a9171c8c-00ae-4b72-a73a-f32912fdafd0 (1).jpg" alt="TechSolutions Logo" class="nav-img-logo">
+                <span class="logo-text">TechSolutions</span>
+            </div>
+            <ul class="nav-menu minimal-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="career.html" class="nav-link active">Career</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="career-section dark-career" id="career">
+            <div class="career-container">
+                <h2>Join Our Team</h2>
+                <p class="career-intro">At TechSolutions, we're always looking for passionate, talented people to help us build the future of IT. Explore our open positions and become part of a team that values innovation, growth, and collaboration.</p>
+                <div class="career-openings">
+                    <div class="career-job">
+                        <h3>Frontend Developer <span class="career-badge">Remote</span></h3>
+                        <p>Build beautiful, performant web interfaces using React, Vue, or similar frameworks.</p>
+                        <ul>
+                            <li>2+ years experience in frontend development</li>
+                            <li>Strong JavaScript/TypeScript skills</li>
+                            <li>UI/UX sensibility</li>
+                        </ul>
+                    </div>
+                    <div class="career-job">
+                        <h3>Cloud Engineer <span class="career-badge">Full Time</span></h3>
+                        <p>Design, deploy, and manage scalable cloud infrastructure for global clients.</p>
+                        <ul>
+                            <li>Experience with AWS, Azure, or GCP</li>
+                            <li>Automation & CI/CD skills</li>
+                            <li>Security best practices</li>
+                        </ul>
+                    </div>
+                    <div class="career-job">
+                        <h3>AI/ML Specialist <span class="career-badge">Remote</span></h3>
+                        <p>Develop and deploy machine learning models for real-world business problems.</p>
+                        <ul>
+                            <li>Python, TensorFlow, or PyTorch</li>
+                            <li>Data analysis & visualization</li>
+                            <li>Problem-solving mindset</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="career-apply">
+                    <h3>Apply Now</h3>
+                    <form class="career-form" autocomplete="off">
+                        <div class="form-group">
+                            <input type="text" id="applicant-name" name="applicant-name" required>
+                            <label for="applicant-name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="applicant-email" name="applicant-email" required>
+                            <label for="applicant-email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="applicant-role" name="applicant-role" required>
+                            <label for="applicant-role">Position Interested In</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="applicant-message" name="applicant-message" rows="4" required></textarea>
+                            <label for="applicant-message">Tell us why you're a great fit</label>
+                        </div>
+                        <button type="submit" class="career-btn">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer dark-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="images/a9171c8c-00ae-4b72-a73a-f32912fdafd0 (1).jpg" alt="TechSolutions Logo" class="footer-img-logo">
+          <span class="footer-logo-text">TechSolutions</span>
+          <span class="footer-tagline">Empowering Innovation, Together</span>
+          <span class="footer-copy">&copy; 2024 TechSolutions. All rights reserved.</span>
+        </div>
+        <div class="footer-center">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+          <form class="footer-newsletter" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Subscribe to newsletter" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="footer-socials-row">
+            <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    // Floating label animation for career form
+    document.querySelectorAll('.career-form .form-group input, .career-form .form-group textarea').forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentNode.classList.add('focused');
+        });
+        input.addEventListener('blur', function() {
+            if (!this.value) this.parentNode.classList.remove('focused');
+        });
+        if (input.value) input.parentNode.classList.add('focused');
+    });
+    document.querySelector('.career-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        this.reset();
+        document.querySelectorAll('.career-form .form-group').forEach(g => g.classList.remove('focused'));
+        alert('Thank you for applying! Our team will review your application.');
+    });
+    </script>
+</body>
+</html> 

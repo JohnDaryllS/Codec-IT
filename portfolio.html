@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | TechSolutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar dark-navbar">
+        <div class="nav-container">
+            <div class="nav-logo minimal-logo">
+                <img src="images/a9171c8c-00ae-4b72-a73a-f32912fdafd0 (1).jpg" alt="TechSolutions Logo" class="nav-img-logo">
+                <span class="logo-text">TechSolutions</span>
+            </div>
+            <ul class="nav-menu minimal-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="career.html" class="nav-link">Career</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="portfolio-section dark-portfolio" id="portfolio">
+            <div class="portfolio-container">
+                <h2>My Projects</h2>
+                <p class="portfolio-intro">A showcase of selected projects I've built for clients and personal growth. Click 'View Live' to see each project in action.</p>
+                <div class="portfolio-grid">
+                    <!-- Project Card Example -->
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumb">
+                            <img src="https://placehold.co/400x240/181A2A/00F0FF?text=Project+1" alt="Project 1 Thumbnail">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Project One</h3>
+                            <p>Modern business website with custom CMS and responsive design.</p>
+                            <a href="https://example.com/project1" class="portfolio-btn" target="_blank">View Live</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumb">
+                            <img src="https://placehold.co/400x240/181A2A/00F0FF?text=Project+2" alt="Project 2 Thumbnail">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Project Two</h3>
+                            <p>AI-powered analytics dashboard for real-time business insights.</p>
+                            <a href="https://example.com/project2" class="portfolio-btn" target="_blank">View Live</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumb">
+                            <img src="https://placehold.co/400x240/181A2A/00F0FF?text=Project+3" alt="Project 3 Thumbnail">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Project Three</h3>
+                            <p>Secure e-commerce platform with payment integration and admin panel.</p>
+                            <a href="https://example.com/project3" class="portfolio-btn" target="_blank">View Live</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-thumb">
+                            <img src="https://placehold.co/400x240/181A2A/00F0FF?text=Project+4" alt="Project 4 Thumbnail">
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Project Four</h3>
+                            <p>Mobile app for task management, built with React Native and Firebase.</p>
+                            <a href="https://example.com/project4" class="portfolio-btn" target="_blank">View Live</a>
+                        </div>
+                    </div>
+                    <!-- Add more project cards as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer dark-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="images/a9171c8c-00ae-4b72-a73a-f32912fdafd0 (1).jpg" alt="TechSolutions Logo" class="footer-img-logo">
+          <span class="footer-logo-text">TechSolutions</span>
+          <span class="footer-tagline">Empowering Innovation, Together</span>
+          <span class="footer-copy">&copy; 2024 TechSolutions. All rights reserved.</span>
+        </div>
+        <div class="footer-center">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+          <form class="footer-newsletter" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Subscribe to newsletter" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+          <div class="footer-socials-row">
+            <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
